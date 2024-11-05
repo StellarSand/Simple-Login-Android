@@ -23,13 +23,13 @@
                 android:orientation="vertical"
                 android:padding="10dp">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/emailTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_4"
                     android:textAppearance="?attr/textAppearanceSubtitle2"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     tools:text="yautiden@gmail.com"
                     android:textSize="15.5sp"/>
 
@@ -41,7 +41,7 @@
                     android:paddingTop="5dp"
                     android:paddingEnd="5dp">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/creationDateTextView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -50,11 +50,11 @@
                         app:drawableStartCompat="@drawable/ic_clock_16dp"
                         android:drawablePadding="5dp"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="?attr/colorControlNormal"
-                        app:drawableTint="?attr/colorControlNormal"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        app:drawableTint="?attr/colorOnSurfaceVariant"
                         tools:text="Created 5 days ago" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/defaultTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -63,10 +63,10 @@
                         android:paddingHorizontal="5dp"
                         android:text="Default Mailbox"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="?attr/colorOnPrimary"
                         tools:ignore="HardcodedText" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/notVerifiedTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -75,11 +75,11 @@
                         android:paddingHorizontal="5dp"
                         android:text="Not verified"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="?attr/colorOnError"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/aliasCountTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -90,8 +90,8 @@
                     android:paddingTop="5dp"
                     android:paddingEnd="5dp"
                     android:textAppearance="?attr/textAppearanceCaption"
-                    android:textColor="?attr/colorControlNormal"
-                    app:drawableTint="?attr/colorControlNormal"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    app:drawableTint="?attr/colorOnSurfaceVariant"
                     tools:text="123 aliases" />
 
             </LinearLayout>

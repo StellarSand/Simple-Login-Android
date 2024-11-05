@@ -12,7 +12,7 @@
             android:id="@+id/rootLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="?attr/colorPrimary"
             android:orientation="horizontal"
             android:padding="10dp">
 
@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:alpha="0.2"
-                app:tint="@color/colorWhite"
+                app:tint="?attr/colorOnPrimary"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/ic_send_48dp" />
 
@@ -38,7 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="?attr/colorOnPrimary"
                     tools:text="50" />
 
                 <TextView
@@ -51,10 +51,11 @@
                     app:autoSizeStepGranularity="2sp"
                     android:paddingTop="10dp"
                     android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="?attr/colorOnPrimary"
                     tools:text="Email handled" />
             </LinearLayout>
         </LinearLayout>
+
     </RelativeLayout>
 
 </layout>

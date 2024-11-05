@@ -152,7 +152,7 @@ class ShareActivity : BaseAppCompatActivity() {
         }
 
         // Move cursor to the last character
-        binding.prefixEditText.setSelection(binding.prefixEditText.text.count())
+        binding.prefixEditText.setSelection(binding.prefixEditText.text!!.count())
     }
 
     private fun setLoading(loading: Boolean) {

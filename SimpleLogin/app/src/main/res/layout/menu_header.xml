@@ -35,24 +35,24 @@
             android:paddingStart="10dp"
             tools:ignore="RtlSymmetry">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/usernameTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="2"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textColor="@color/colorWhite"
+                android:textColor="?attr/colorOnSurface"
                 tools:text="John Doe" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/emailTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?attr/textAppearanceCaption"
-                android:textColor="@color/colorWhite"
+                android:textColor="?attr/colorOnSurface"
                 tools:text="email@example.com" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/membershipTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

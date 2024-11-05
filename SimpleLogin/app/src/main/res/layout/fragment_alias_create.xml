@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorItemBackground">
+        android:background="?attr/colorSurface">
 
         <!--Toolbar-->
 
@@ -18,7 +18,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/ic_close_24dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
                 android:layout_marginStart="@dimen/margin_8"
                 android:text="Create Alias"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:ignore="HardcodedText" />
         </com.google.android.material.appbar.MaterialToolbar>
 
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/prefixEditText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                         android:gravity="end"
                         android:singleLine="true"
                         android:textAppearance="?attr/textAppearanceBody1"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="Autofill,LabelFor,TextFields" />
 
                     <Spinner
@@ -69,7 +69,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:backgroundTint="@color/colorPrimary"
+                        android:backgroundTint="?attr/colorPrimary"
                         android:spinnerMode="dropdown" />
                 </LinearLayout>
 
@@ -78,12 +78,11 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:text="@string/create_alias_warning"
-                    android:textColor="@color/colorNegative" />
+                    android:textColor="?attr/colorError" />
 
-                <View
+                <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorDarkGray" />
+                    android:layout_height="wrap_content" />
 
                 <LinearLayout
                     android:id="@+id/mailboxesTitleLinearLayout"
@@ -92,16 +91,16 @@
                     android:orientation="horizontal"
                     android:paddingVertical="5dp">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="MAILBOXES"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="?attr/colorPrimary"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="10dp"
@@ -109,11 +108,11 @@
                         android:text="The mailboxes that own this alias"
                         android:textAlignment="textEnd"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorDarkGray"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/mailboxesTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -124,7 +123,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/colorDarkGray" />
+                    android:background="?attr/colorOnSurfaceVariant" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -133,16 +132,16 @@
                     android:paddingVertical="5dp"
                     android:weightSum="5">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="NAME"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="?attr/colorPrimary"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
@@ -151,7 +150,7 @@
                         android:text="Display name when sending &amp; replying (optional)"
                         android:textAlignment="textEnd"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorDarkGray"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -169,14 +168,13 @@
                         android:layout_height="wrap_content"
                         android:hint="Ex: Jane Doe"
                         android:textAppearance="?textAppearanceBody2"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="HardcodedText" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <View
+                <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorDarkGray" />
+                    android:layout_height="wrap_content" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -184,16 +182,16 @@
                     android:orientation="horizontal"
                     android:paddingVertical="5dp">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="NOTE"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="?attr/colorPrimary"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="10dp"
@@ -201,7 +199,7 @@
                         android:text="Anything to remind you (optional)"
                         android:textAlignment="textEnd"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorDarkGray"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -219,13 +217,12 @@
                         android:layout_height="wrap_content"
                         android:hint="Ex: For tech newsletters, online shopping..."
                         android:textAppearance="?textAppearanceBody2"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="HardcodedText" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/createButton"
-                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -234,29 +231,29 @@
                     android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/create_alias_hint"
-                    android:textColor="@color/colorDarkGray" />
+                    android:textColor="?attr/colorOnSurfaceVariant" />
 
             </LinearLayout>
 
         </ScrollView>
 
-        <ProgressBar
+        <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:indeterminate="true"/>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/dividerColor"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />

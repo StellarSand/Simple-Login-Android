@@ -7,13 +7,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorItemBackground">
+        android:background="?attr/colorSurface">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/rootConstraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorItemBackground">
+            android:background="?attr/colorSurface">
 
             <!--Toolbar-->
 
@@ -26,13 +26,13 @@
                 app:navigationIcon="@drawable/ic_hamburger"
                 app:contentInsetStartWithNavigation="0dp">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/toolbarTitleText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:text="Your Aliases"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
                     tools:ignore="HardcodedText" />
 
@@ -45,12 +45,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/toolbar"
-                android:background="@color/colorItemBackground"
+                android:background="?attr/colorSurface"
                 app:tabIndicator="@drawable/tab_indicator"
                 app:tabIndicatorFullWidth="false"
-                app:tabTextAppearance="@style/TabText"
-                app:tabTextColor="@color/colorControlNormal"
-                app:tabSelectedTextColor="@color/colorPrimary">
+                app:tabTextAppearance="@style/TabText">
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/allTabItem"
@@ -75,11 +73,10 @@
 
             </com.google.android.material.tabs.TabLayout>
 
-            <View
+            <com.google.android.material.divider.MaterialDivider
                 android:id="@+id/separatorView"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/dividerColor"
+                android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tabLayout" />
@@ -102,7 +99,7 @@
                         android:id="@+id/recyclerView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorItemBackground"
+                        android:background="?attr/colorSurface"
                         android:clipToPadding="false"
                         android:paddingBottom="50dp"
                         tools:listitem="@layout/recycler_item_alias"/>
@@ -115,20 +112,19 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|end"
                     android:layout_margin="24dp"
-                    android:backgroundTint="@color/colorPrimary"
                     app:srcCompat="@drawable/ic_arrow_upward_24dp"
-                    app:tint="@color/colorWhite"
                     tools:ignore="ContentDescription" />
 
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ProgressBar
+        <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:indeterminate="true"/>
     </RelativeLayout>
 
 </layout>

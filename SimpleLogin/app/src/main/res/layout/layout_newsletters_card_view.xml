@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,31 +18,27 @@
                 android:layout_toStartOf="@id/newsletters_switch"
                 android:orientation="vertical">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:text="@string/newsletter"
                     android:textAppearance="?attr/textAppearanceSubtitle2"
-                    android:textColor="@color/colorText" />
+                    android:textColor="?attr/colorOnSurface" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/newsletter_explication" />
 
             </LinearLayout>
 
-            <androidx.appcompat.widget.SwitchCompat
+            <com.google.android.material.materialswitch.MaterialSwitch
                 android:id="@+id/newsletters_switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:thumb="@drawable/switch_thumb"
-                app:thumbTintMode="screen"
-                app:track="@drawable/switch_track"
-                app:trackTint="@color/switch_track_color_state"/>
+                android:layout_centerVertical="true"/>
         </RelativeLayout>
 
 </layout>

@@ -24,18 +24,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
-                android:background="@color/colorItemBackground"
+                android:background="@android:color/transparent"
                 android:src="@drawable/ic_close_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:text="How To Send Email From Alias"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:ignore="HardcodedText" />
 
         </com.google.android.material.appbar.MaterialToolbar>
@@ -45,56 +45,54 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/toolbar"
             android:layout_centerInParent="true"
-            android:background="@color/colorItemBackground"
             android:orientation="vertical"
             android:padding="20dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Follow these 2 simple steps:"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:ignore="HardcodedText" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="1. Create a contact by clicking + button and entering an email address that you want to send to."
                 tools:ignore="HardcodedText"
-                android:textColor="@color/colorText" />
+                android:textColor="?attr/colorOnSurface" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="2. Click on the contact to copy the reverse-alias or open a mail composer with that reverse-alias pre-filled."
                 tools:ignore="HardcodedText"
-                android:textColor="@color/colorText" />
+                android:textColor="?attr/colorOnSurface" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Send email as you normally do to that reverse-alias and that's all!\nWe will take care of the rest to make magic happen."
                 tools:ignore="HardcodedText"
-                android:textColor="@color/colorText" />
+                android:textColor="?attr/colorOnSurface" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Note that the reverse-alias can only be used by you which means you have to send email to the reverse-alias ONLY from the email that you register with SimpleLogin."
-                android:textColor="@color/colorNegative"
+                android:textColor="?attr/colorError"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:id="@+id/separatorView"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/toolbar"
-            android:background="@color/dividerColor" />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"/>
 
     </RelativeLayout>
 </layout>

@@ -24,38 +24,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
-                android:background="@color/colorItemBackground"
+                android:background="@android:color/transparent"
                 android:src="@drawable/ic_close_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:text="How To Use Mailboxes"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:ignore="HardcodedText" />
 
         </com.google.android.material.appbar.MaterialToolbar>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/toolbar"
             android:paddingTop="20dp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:textColor="@color/colorText"
+            android:textColor="?attr/colorOnSurface"
             android:text="@string/how_to_use_mailbox"/>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:id="@+id/separatorView"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/toolbar"
-            android:background="@color/dividerColor" />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar" />
 
     </RelativeLayout>
 </layout>

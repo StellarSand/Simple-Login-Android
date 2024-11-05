@@ -2,11 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?attr/textAppearanceBody2"
-        android:textColor="@color/colorText"
+        android:textColor="?attr/colorOnSurface"
         tools:ignore="Autofill,LabelFor,TextFields" />
 </layout>

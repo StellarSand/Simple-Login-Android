@@ -7,7 +7,7 @@
         android:id="@+id/addMenuItem"
         android:icon="@drawable/ic_plus_28dp"
         android:title="Add"
-        app:iconTint="@color/colorPrimary"
+        app:iconTint="?attr/colorPrimary"
         app:showAsAction="ifRoom"
         tools:ignore="HardcodedText" />
 

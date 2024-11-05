@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorItemBackground">
+        android:background="?attr/colorSurface">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,9 +50,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawableEnd="@drawable/ic_close_fill_21dp"
-                            app:drawableTint="@color/colorPrimary"
+                            app:drawableTint="?attr/colorPrimary"
                             android:inputType="textEmailAddress"
-                            android:textColor="@color/colorText" />
+                            android:textColor="?attr/colorOnSurface" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -62,7 +62,7 @@
                         android:layout_height="wrap_content"
                         android:hint="Password"
                         app:endIconMode="password_toggle"
-                        app:endIconTint="@color/colorPrimary"
+                        app:endIconTint="?attr/colorPrimary"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText">
 
@@ -70,20 +70,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPassword"
-                            android:textColor="@color/colorText" />
+                            android:textColor="?attr/colorOnSurface" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/loginButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="24dp"
-                        android:elevation="0dp"
                         android:text="Sign in"
-                        android:background="@color/colorPrimary"
-                        android:textColor="@color/colorWhite"
-
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -94,20 +90,23 @@
                         android:layout_marginTop="4dp"
                         tools:ignore="HardcodedText" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/loginWithProtonButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:elevation="0dp"
+                        app:strokeColor="@color/protonMain"
                         android:text="Log in with Proton"
                         android:textColor="@color/protonMain"
-                        android:background="@drawable/button_border_proton"
-                        android:drawableStart="@drawable/ic_proton"
+                        app:icon="@drawable/ic_proton"
+                        app:iconTint="@color/protonMain"
+                        app:iconGravity="textStart"
+                        app:iconPadding="@dimen/margin_8"
                         android:paddingStart="20dp"
                         android:paddingEnd="20dp"
-                        tools:ignore="HardcodedText"/>
+                        tools:ignore="HardcodedText"
+                        style="@style/Widget.Material3.Button.OutlinedButton"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -137,11 +136,9 @@
                             tools:ignore="HardcodedText" />
                     </LinearLayout>
 
-                    <View
+                    <com.google.android.material.divider.MaterialDivider
                         android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:alpha="0.1"
-                        android:background="@color/colorText" />
+                        android:layout_height="wrap_content"/>
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/apiKeyButton"
@@ -156,7 +153,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="1dp"
                         android:alpha="0.1"
-                        android:background="@color/colorText" />
+                        android:background="?attr/colorOnSurface" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/changeApiUrlButton"
@@ -192,28 +189,29 @@
                     android:textColor="@color/colorDarkGray"
                     tools:text="SimpleLogin vX.X" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/aboutUsTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:text="About Us"
                     android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="?attr/colorPrimary"
                     android:textStyle="bold"
                     app:drawableStartCompat="@drawable/ic_about_24dp"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <ProgressBar
+        <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:indeterminate="true"
             android:visibility="gone" />
 
         <View

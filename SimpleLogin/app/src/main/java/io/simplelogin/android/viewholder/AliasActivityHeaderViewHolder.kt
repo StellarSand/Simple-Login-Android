@@ -93,7 +93,7 @@ class AliasActivityHeaderViewHolder(private val binding: RecyclerItemAliasActivi
             ContextCompat.getDrawable(context, R.drawable.ic_block_58dp)
         )
         binding.blockedStat.rootLinearLayout.setBackgroundColor(
-            ContextCompat.getColor(context, R.color.colorNegative)
+            ContextCompat.getColor(context, R.color.color_error)
         )
         binding.blockedStat.numberTextView.text = "${alias.blockCount}"
         binding.blockedStat.typeTextView.text = "Email blocked"

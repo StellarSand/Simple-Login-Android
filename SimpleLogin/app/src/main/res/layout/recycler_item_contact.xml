@@ -27,17 +27,17 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/emailTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_4"
                     android:textAppearance="?attr/textAppearanceSubtitle2"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="15.5sp"
                     tools:text="yautiden@gmail.com" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/creationDateTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -45,12 +45,12 @@
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:textAppearance="?attr/textAppearanceCaption"
-                    android:textColor="?attr/colorControlNormal"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     app:drawableStartCompat="@drawable/ic_clock_16dp"
-                    app:drawableTint="?attr/colorControlNormal"
+                    app:drawableTint="?attr/colorOnSurfaceVariant"
                     tools:text="Created on 6 Feb 2020 at 18:05 (1 month ago)" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/lastEmailSentTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,14 +58,14 @@
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:textAppearance="?attr/textAppearanceCaption"
-                    android:textColor="?attr/colorControlNormal"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     app:drawableStartCompat="@drawable/ic_send_16dp"
-                    app:drawableTint="?attr/colorControlNormal"
+                    app:drawableTint="?attr/colorOnSurfaceVariant"
                     tools:text="Last sent on 6 Feb 2020 at 18:05 (1 month ago)" />
 
             </LinearLayout>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/blockedEmailTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

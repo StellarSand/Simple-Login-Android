@@ -36,7 +36,7 @@ class AliasActivityViewHolder(private val binding: RecyclerItemAliasActivityBind
                         R.drawable.ic_send_28dp
                     )
                 )
-                binding.iconImageView.setTint(R.color.colorPrimary)
+                binding.iconImageView.setTint(R.color.color_primary)
             }
 
             Action.REPLY -> {
@@ -47,7 +47,7 @@ class AliasActivityViewHolder(private val binding: RecyclerItemAliasActivityBind
                         R.drawable.ic_reply_24dp
                     )
                 )
-                binding.iconImageView.setTint(R.color.colorPrimary)
+                binding.iconImageView.setTint(R.color.color_primary)
             }
 
             else -> {
@@ -58,7 +58,7 @@ class AliasActivityViewHolder(private val binding: RecyclerItemAliasActivityBind
                         R.drawable.ic_block_24dp
                     )
                 )
-                binding.iconImageView.setTint(R.color.colorNegative)
+                binding.iconImageView.setTint(R.color.color_error)
             }
         }
     }

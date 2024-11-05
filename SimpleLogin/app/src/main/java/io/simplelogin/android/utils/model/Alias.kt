@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Parcelable
 import android.text.Spannable
 import android.text.SpannableStringBuilder
+import android.util.TypedValue
 import androidx.core.content.ContextCompat
 import androidx.core.text.color
 import com.google.gson.annotations.SerializedName
@@ -73,7 +74,7 @@ data class Alias(
     fun getCountSpannableString(context: Context): Spannable {
         if (_countSpannableString == null) {
             val darkGrayColor = ContextCompat.getColor(context, R.color.colorDarkGray)
-            val blackColor = ContextCompat.getColor(context, R.color.colorText)
+            val blackColor = getColorFromAttr(context, R.attr.colorOnSurface)
             val spannableString = SpannableStringBuilder()
                 .color(blackColor) { append("$forwardCount ") }
                 .color(darkGrayColor) { append(if (forwardCount > 1) "forwards," else "forwards,") }
@@ -144,13 +145,19 @@ data class AliasArray(
     @SerializedName("aliases") val aliases: List<Alias>
 )
 
+fun getColorFromAttr(context: Context, attr: Int): Int {
+    val typedValue = TypedValue()
+    context.theme.resolveAttribute(attr, typedValue, true)
+    return typedValue.data
+}
+
 fun List<AliasMailbox>.toSpannableString(context: Context): Spannable {
-    val primaryColor = ContextCompat.getColor(context, R.color.colorPrimary)
-    val blackColor = ContextCompat.getColor(context, R.color.colorText)
+    val primaryColor = getColorFromAttr(context, R.attr.colorPrimary)
+    val textColor = getColorFromAttr(context, R.attr.colorOnSurface)
     val spannableString = SpannableStringBuilder()
 
     forEachIndexed { index, aliasMailbox ->
-        spannableString.color(blackColor) { append(" ${aliasMailbox.email} ") }
+        spannableString.color(textColor) { append(" ${aliasMailbox.email} ") }
         if (index != size - 1) {
             spannableString.color(primaryColor) { append("&") }
         }

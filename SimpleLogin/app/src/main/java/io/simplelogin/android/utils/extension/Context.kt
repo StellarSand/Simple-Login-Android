@@ -30,7 +30,7 @@ fun Context.toastUpToDate() = toastShortly("You are up to date")
 
 fun Context.getVersionName(): String {
     val packageInfo = packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)
-    return packageInfo.versionName
+    return packageInfo.versionName!!
 }
 
 fun Context.dpToPixel(dp: Float): Float =

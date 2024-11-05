@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorItemBackground">
+        android:background="?attr/colorSurface">
 
         <!--Toolbar-->
 
@@ -18,13 +18,13 @@
             app:navigationIcon="@drawable/ic_chevron_left_24dp"
             app:contentInsetStartWithNavigation="0dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:text="What you can do with aliases"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
                 tools:ignore="HardcodedText" />
 
@@ -34,7 +34,7 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/colorItemBackground"
+            android:background="?attr/colorSurface"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,7 @@
                     android:background="@drawable/card_shape_with_ripple"
                     android:padding="@dimen/margin_4">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/stepATextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -74,14 +74,14 @@
                         android:src="@mipmap/what_a"
                         tools:ignore="ContentDescription" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/stepAImageView"
                         android:padding="@dimen/card_view_padding"
                         android:text="@string/what_a"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?attr/colorControlNormal" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                 </RelativeLayout>
 
@@ -96,7 +96,7 @@
                     android:background="@drawable/card_shape_with_ripple"
                     android:padding="@dimen/margin_4">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/stepBTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -113,14 +113,14 @@
                         android:src="@mipmap/what_b"
                         tools:ignore="ContentDescription" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/stepBImageView"
                         android:padding="@dimen/card_view_padding"
                         android:text="@string/what_b"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?attr/colorControlNormal" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                 </RelativeLayout>
 
@@ -135,7 +135,7 @@
                     android:background="@drawable/card_shape_with_ripple"
                     android:padding="@dimen/margin_4">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/stepCTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -152,14 +152,14 @@
                         android:src="@mipmap/what_c"
                         tools:ignore="ContentDescription" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/stepCImageView"
                         android:padding="@dimen/card_view_padding"
                         android:text="@string/what_c"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?attr/colorControlNormal" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                 </RelativeLayout>
 
@@ -167,10 +167,9 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/dividerColor"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />

@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorItemBackground">
+        android:background="?attr/colorSurface">
 
         <!--Toolbar-->
 
@@ -18,13 +18,13 @@
             app:navigationIcon="@drawable/ic_chevron_left_24dp"
             app:contentInsetStartWithNavigation="0dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:text="The journey to a sane inbox"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
                 tools:ignore="HardcodedText" />
 
@@ -33,7 +33,7 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/colorItemBackground"
+            android:background="?attr/colorSurface"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,17 +56,17 @@
                     android:background="@drawable/card_shape_with_ripple"
                     android:padding="@dimen/margin_4">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/step1TextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/card_view_padding"
                         android:text="1. Sign up and start creating aliases"
                         android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="HardcodedText" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/step1TextView"
@@ -75,7 +75,7 @@
                         android:paddingBottom="@dimen/card_view_padding"
                         android:text="@string/step_1"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?attr/colorControlNormal" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                 </RelativeLayout>
 
@@ -90,17 +90,17 @@
                     android:background="@drawable/card_shape_with_ripple"
                     android:padding="@dimen/margin_4">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/step2TextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/card_view_padding"
                         android:text="2. Receive emails safely"
                         android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="HardcodedText" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/step2TextView"
@@ -109,7 +109,7 @@
                         android:paddingBottom="@dimen/card_view_padding"
                         android:text="@string/step_2"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?attr/colorControlNormal" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                 </RelativeLayout>
 
@@ -124,17 +124,17 @@
                     android:background="@drawable/card_shape_with_ripple"
                     android:padding="@dimen/margin_4">
 
-                        <TextView
+                        <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/step3TextView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="@dimen/card_view_padding"
                             android:text="3. Create aliases without leaving the browser"
                             android:textAppearance="?attr/textAppearanceHeadline6"
-                            android:textColor="@color/colorText"
+                            android:textColor="?attr/colorOnSurface"
                             tools:ignore="HardcodedText" />
 
-                        <TextView
+                        <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/step3TextView"
@@ -143,7 +143,7 @@
                             android:paddingBottom="@dimen/card_view_padding"
                             android:text="@string/step_3"
                             android:textAppearance="?attr/textAppearanceBody2"
-                            android:textColor="?attr/colorControlNormal" />
+                            android:textColor="?attr/colorOnSurfaceVariant" />
 
                     </RelativeLayout>
 
@@ -151,10 +151,9 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/dividerColor"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />

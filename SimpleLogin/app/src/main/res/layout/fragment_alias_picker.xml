@@ -6,24 +6,34 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorItemBackground">
+        android:background="?attr/colorSurface">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="?attr/colorSurface"
+            app:liftOnScroll="true"
+            app:liftOnScrollTargetViewId="@id/recyclerView">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
             app:menu="@menu/alias_picker_menu"
             app:navigationIcon="@drawable/ic_close_24dp"
             app:contentInsetStartWithNavigation="0dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginStart="@dimen/margin_8"
                 android:text="Pick An Alias"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
                 tools:ignore="HardcodedText" />
         </com.google.android.material.appbar.MaterialToolbar>
@@ -32,14 +42,8 @@
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorItemBackground"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
             app:tabIndicator="@drawable/tab_indicator"
             app:tabIndicatorFullWidth="false"
-            app:tabSelectedTextColor="@color/colorPrimary"
-            app:tabTextColor="@color/colorControlNormal"
             app:tabTextAppearance="@style/TabText">
 
             <com.google.android.material.tabs.TabItem
@@ -64,15 +68,8 @@
                 tools:ignore="HardcodedText" />
 
         </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
-        <View
-            android:id="@+id/separator_view"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/dividerColor"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tab_layout" />
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh_layout"
@@ -81,13 +78,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/separator_view">
+            app:layout_constraintTop_toBottomOf="@id/appbar">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="@color/colorItemBackground"
+                android:background="?attr/colorSurface"
                 android:clipToPadding="false"
                 android:paddingBottom="20dp" />
 

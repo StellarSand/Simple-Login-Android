@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorItemBackground">
+        android:background="?attr/colorSurface">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
@@ -23,21 +23,20 @@
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 style="@style/TextAppearance.Material3.ActionBar.Title"
                 tools:text="OTP Code" />
 
         </com.google.android.material.appbar.MaterialToolbar>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/dividerColor"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />
@@ -57,68 +56,68 @@
                 android:layout_height="wrap_content"
                 android:weightSum="6">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/firstNumberTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/verificationCodeTextSize"
                     android:textStyle="bold"
                     tools:text="_" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/secondNumberTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/verificationCodeTextSize"
                     android:textStyle="bold"
                     tools:text="_" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/thirdNumberTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/verificationCodeTextSize"
                     android:textStyle="bold"
                     tools:text="_" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/fourthNumberTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/verificationCodeTextSize"
                     android:textStyle="bold"
                     tools:text="_" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/fifthNumberTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/verificationCodeTextSize"
                     android:textStyle="bold"
                     tools:text="_" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/sixthNumberTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/verificationCodeTextSize"
                     android:textStyle="bold"
                     tools:text="_" />
@@ -128,13 +127,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/errorTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textColor="@color/colorNegative"
+                android:textColor="?attr/colorError"
                 tools:text="Error message" />
 
             <View
@@ -145,42 +144,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/oneButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="1"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
                 <View
                     android:layout_width="15dp"
                     android:layout_height="90dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/twoButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="2"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
                 <View
                     android:layout_width="15dp"
                     android:layout_height="90dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/threeButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="3"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
             </LinearLayout>
@@ -193,42 +192,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/fourButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="4"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
                 <View
                     android:layout_width="15dp"
                     android:layout_height="90dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/fiveButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="5"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
                 <View
                     android:layout_width="15dp"
                     android:layout_height="90dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/sixButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="6"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
             </LinearLayout>
@@ -241,42 +240,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/sevenButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="7"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
                 <View
                     android:layout_width="15dp"
                     android:layout_height="90dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/eightButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="8"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
                 <View
                     android:layout_width="15dp"
                     android:layout_height="90dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/nineButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="9"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
             </LinearLayout>
@@ -289,7 +288,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:visibility="invisible" />
@@ -298,14 +297,14 @@
                     android:layout_width="15dp"
                     android:layout_height="90dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/zeroButton"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/shape_oval"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="@dimen/numPadTextSize" />
 
                 <View
@@ -319,17 +318,19 @@
                     android:background="@drawable/shape_oval"
                     android:padding="25dp"
                     android:src="@drawable/ic_cancel_24dp"
-                    app:tint="@color/colorText" />
+                    app:tint="?attr/colorOnSurface" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <ProgressBar
+        <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:indeterminate="true"
             android:visibility="gone"
+            tools:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

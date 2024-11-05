@@ -16,16 +16,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/ic_chevron_left_24dp"
             app:contentInsetStartWithNavigation="0dp"
-            android:background="@color/colorItemBackground">
+            android:background="?attr/colorSurface">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:text="It's never too late to protect your email"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:ignore="HardcodedText" />
 
 
@@ -46,198 +46,198 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="YOUR CURRENT PLAN"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="?attr/colorPrimary"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="10dp"
                     android:text="10 aliases"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorDarkGray"
-                    app:drawableTint="@color/colorDarkGray"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    app:drawableTint="?attr/colorOnSurfaceVariant"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Unlimited bandwidth"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorDarkGray"
-                    app:drawableTint="@color/colorDarkGray"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    app:drawableTint="?attr/colorOnSurfaceVariant"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Sign in with SimpleLogin"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorDarkGray"
-                    app:drawableTint="@color/colorDarkGray"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    app:drawableTint="?attr/colorOnSurfaceVariant"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="20dp"
                     android:text="GO PREMIUM FOR MORE"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="?attr/colorPrimary"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="10dp"
                     android:text="Unlimited aliases"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Unlimited reply/send from alias"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Unlimited custom domains"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Bring your own domain to create aliases like contact@your-domain.com"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorDarkGray"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     app:drawableTint="@android:color/transparent"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Catch-all (or wildcard) domain"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="50 directories/usernames"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Unlimited mailboxes"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="PGP Encryption"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
                     android:text="...and all of our upcoming features."
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
+                    android:textColor="?attr/colorOnSurface"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
                     android:text="Yearly subscription $30/year"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="?attr/colorPrimary"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Save 2 months by subscribing yearly. Our best deal."
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorDarkGray"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:text="Monthly subscription $4/month"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="?attr/colorPrimary"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="A cup of coffee per month to enhance your superpowers."
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorDarkGray"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     tools:ignore="HardcodedText" />
 
                 <com.google.android.material.button.MaterialButton
@@ -246,8 +246,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="UPGRADE"
-                    android:textColor="@color/btn_text_color_state"
+                    android:text="Upgrade"
                     tools:ignore="HardcodedText" />
 
                 <LinearLayout
@@ -256,95 +255,93 @@
                     android:orientation="horizontal"
                     android:paddingTop="20dp">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SimpleLogin"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorDarkGray"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         tools:ignore="HardcodedText" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/termsTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="4dp"
                         android:text="Term of Use"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="?attr/colorPrimary"
                         tools:ignore="HardcodedText,RtlSymmetry" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="4dp"
                         android:text="&amp;"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorDarkGray"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         tools:ignore="HardcodedText,RtlSymmetry" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/privacyTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="4dp"
                         android:text="Privacy Policy"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="?attr/colorPrimary"
                         tools:ignore="HardcodedText,RtlSymmetry" />
 
                 </LinearLayout>
 
-                <View
+                <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="20dp"
-                    android:alpha="0.2"
-                    android:background="@color/colorDarkGray" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="20dp"
                     android:text="FOR ENTERPRISES"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="?attr/colorPrimary"
                     tools:ignore="HardcodedText" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="10dp"
                     android:text="Dedicated server &amp; database"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Dashboard to manage team accounts"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
-                <TextView
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Single Sign-On (SAML or OAuth2)"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    android:textColor="?attr/colorOnSurface"
+                    app:drawableTint="?attr/colorPrimary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -354,18 +351,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="CONTACT US"
-                    android:textColor="@color/btn_text_color_state"
+                    android:text="Contact us"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@drawable/shape_toolbar_drop_shadow"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />

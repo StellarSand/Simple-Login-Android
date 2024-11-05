@@ -3,15 +3,57 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/color_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/color_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/color_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/color_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/color_tertiary</item>
+        <item name="colorOnTertiary">@color/color_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/color_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/color_onTertiaryContainer</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_onError</item>
+        <item name="colorErrorContainer">@color/color_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/color_onErrorContainer</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_onBackground</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_onSurface</item>
+        <item name="colorSurfaceVariant">@color/color_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/color_onSurfaceVariant</item>
+        <item name="colorOutline">@color/color_outline</item>
+        <item name="colorOutlineVariant">@color/color_outlineVariant</item>
+        <item name="colorSurfaceInverse">@color/color_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/color_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/color_inversePrimary</item>
+        <item name="colorPrimaryFixed">@color/color_primaryFixed</item>
+        <item name="colorOnPrimaryFixed">@color/color_onPrimaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/color_primaryFixedDim</item>
+        <item name="colorOnPrimaryFixedVariant">@color/color_onPrimaryFixedVariant</item>
+        <item name="colorSecondaryFixed">@color/color_secondaryFixed</item>
+        <item name="colorOnSecondaryFixed">@color/color_onSecondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/color_secondaryFixedDim</item>
+        <item name="colorOnSecondaryFixedVariant">@color/color_onSecondaryFixedVariant</item>
+        <item name="colorTertiaryFixed">@color/color_tertiaryFixed</item>
+        <item name="colorOnTertiaryFixed">@color/color_onTertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/color_tertiaryFixedDim</item>
+        <item name="colorOnTertiaryFixedVariant">@color/color_onTertiaryFixedVariant</item>
+        <item name="colorSurfaceDim">@color/color_surfaceDim</item>
+        <item name="colorSurfaceBright">@color/color_surfaceBright</item>
+        <item name="colorSurfaceContainerLowest">@color/color_surfaceContainerLowest</item>
+        <item name="colorSurfaceContainerLow">@color/color_surfaceContainerLow</item>
+        <item name="colorSurfaceContainer">@color/color_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/color_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/color_surfaceContainerHighest</item>
+
         <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@color/colorItemBackground</item>
-        <item name="android:textColorPrimary">@color/colorPrimary</item>
-        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="android:statusBarColor">?attr/colorSurface</item>
         <item name="materialAlertDialogTheme">@style/SLMaterialAlertDialog</item>
-        <item name="android:navigationBarColor">@color/colorItemBackground</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
     </style>
 
     <style name="HomeActivityTheme" parent="AppTheme">
@@ -19,13 +61,12 @@
     </style>
 
     <!--Tab text size-->
-    <style name="TabText" parent="TextAppearance.Material3.ActionBar.Title">
+    <style name="TabText" parent="TextAppearance.Material3.TitleMedium">
         <item name="android:textSize">16sp</item>
     </style>
 
     <!--Custom MaterialAlertDialogTheme-->
     <style name="SLMaterialAlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
-        <item name="android:backgroundTint">@color/colorItemBackground</item>
         <item name="buttonBarNeutralButtonStyle">@style/SLMaterialAlertButtonNeutral</item>
         <item name="buttonBarNegativeButtonStyle">@style/SLMaterialAlertButtonNegative</item>
         <item name="buttonBarPositiveButtonStyle">@style/SLMaterialAlertButtonPositive</item>
@@ -34,32 +75,32 @@
     </style>
 
     <style name="SLMaterialAlertButtonNeutral" parent="Widget.Material3.Button.TextButton.Dialog">
-        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
     </style>
 
     <style name="SLMaterialAlertButtonNegative" parent="Widget.Material3.Button.TextButton.Dialog">
-        <item name="android:textColor">@color/colorNegative</item>
+        <item name="android:textColor">?attr/colorError</item>
     </style>
 
     <style name="SLMaterialAlertButtonPositive" parent="Widget.Material3.Button.TextButton.Dialog">
-        <item name="android:backgroundTint">@color/colorPrimary</item>
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
     <style name="SLMaterialDialogTitleTextStyle" parent="MaterialAlertDialog.Material3.Title.Text">
-        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="android:textAppearance">?attr/textAppearanceSubtitle2</item>
     </style>
 
     <style name="SLMaterialDialogBodyTextStyle" parent="MaterialAlertDialog.Material3.Body.Text">
-        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
     </style>
     <!--End of: Custom MaterialAlertDialogTheme-->
 
     <style name="SlAlertDialogTheme" parent="Theme.Material3.Light.Dialog.Alert">
         <item name="textAppearanceListItemSmall">?attr/textAppearanceSubtitle2</item>
-        <item name="textColorAlertDialogListItem">@color/colorPrimary</item>
-        <item name="android:textColor">@color/colorText</item>
+        <item name="textColorAlertDialogListItem">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
 

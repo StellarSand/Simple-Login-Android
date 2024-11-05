@@ -27,14 +27,14 @@
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Change API URL"
                 style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:ignore="HardcodedText" />
 
         </com.google.android.material.appbar.MaterialToolbar>
@@ -47,19 +47,19 @@
             android:orientation="vertical"
             android:padding="20dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/do_not_change_api_url"
                 android:textAlignment="center"
-                android:textColor="@color/colorNegative" />
+                android:textColor="?attr/colorError" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/default_api_url"
                 android:textAlignment="center"
-                android:textColor="@color/colorText" />
+                android:textColor="?attr/colorOnSurface" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/apiUrlTextField"
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textNoSuggestions"
-                    android:textColor="@color/colorText" />
+                    android:textColor="?attr/colorOnSurface" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
@@ -82,8 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:padding="12dp"
-                android:textColor="@color/btn_text_color_state"
+                android:layout_marginTop="@dimen/margin_8"
                 android:text="Apply change"
                 tools:ignore="HardcodedText" />
 
@@ -92,6 +91,7 @@
                 style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
                 android:layout_gravity="center"
                 android:text="Reset to default value"
                 android:textSize="16sp"
@@ -99,12 +99,11 @@
 
         </LinearLayout>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:id="@+id/separatorView"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/toolbar"
-            android:background="@color/dividerColor" />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar" />
 
     </RelativeLayout>
 </layout>

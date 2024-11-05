@@ -19,14 +19,14 @@
             android:background="@drawable/shape_bottom_sheet_toolbar"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Create Contact"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:ignore="HardcodedText" />
 
         </com.google.android.material.appbar.MaterialToolbar>
@@ -36,26 +36,25 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/toolbar"
             android:layout_centerInParent="true"
-            android:background="@color/colorItemBackground"
             android:orientation="vertical"
             android:padding="20dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Create a contact to send email from your alias"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textAlignment="center"
                 tools:ignore="HardcodedText" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/aliasTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
                 android:textAlignment="center"
                 android:textAppearance="?attr/textAppearanceSubtitle2"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 tools:text="email@example.com" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -71,14 +70,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress|textNoSuggestions"
-                    android:textColor="@color/colorText" />
+                    android:textColor="?attr/colorOnSurface" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/createButton"
-                style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
                 android:layout_gravity="center"
                 android:enabled="false"
                 android:text="CREATE"
@@ -90,6 +89,7 @@
                 style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
                 android:layout_gravity="center"
                 android:text="Cancel"
                 android:textSize="16sp"
@@ -97,12 +97,11 @@
 
         </LinearLayout>
 
-        <View
+        <com.google.android.material.divider.MaterialDivider
             android:id="@+id/separatorView"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/toolbar"
-            android:background="@color/dividerColor" />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"/>
 
     </RelativeLayout>
 </layout>

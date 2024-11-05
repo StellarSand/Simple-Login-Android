@@ -26,25 +26,25 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/emailTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/margin_4"
                         android:textAppearance="?attr/textAppearanceSubtitle2"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         android:textSize="15.5sp"
                         tools:text="email@example.com" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/timeTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:drawableStartCompat="@drawable/ic_clock_16dp"
                         android:drawablePadding="5dp"
-                        app:drawableTint="?attr/colorControlNormal"
+                        app:drawableTint="?attr/colorOnSurfaceVariant"
                         android:paddingTop="5dp"
-                        android:textColor="?attr/colorControlNormal"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         tools:text="18 Mar 2020 at 22:03 (1 day ago)" />
 
                 </LinearLayout>
